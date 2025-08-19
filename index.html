@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CodingGeh — Static Landing, One Prompt to Ship</title>
+    <meta name="description" content="A fast, responsive static landing with zero dependencies. Open index.html and ship." />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="author" content="CodingGeh" />
+    <meta name="theme-color" content="#6c5ce7" />
+    <link rel="canonical" id="canonical" href="https://coding-geh.github.io/static-landing/" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+    <link rel="alternate" hreflang="en" id="alt-en" href="https://coding-geh.github.io/static-landing/?lang=en" />
+    <link rel="alternate" hreflang="id" id="alt-id" href="https://coding-geh.github.io/static-landing/?lang=id" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CodingGeh" />
+    <meta property="og:title" content="CodingGeh — Static Landing, One Prompt to Ship" />
+    <meta property="og:description" content="A fast, responsive static landing with zero dependencies. Open index.html and ship." />
+    <meta property="og:url" id="ogUrl" content="https://coding-geh.github.io/static-landing/" />
+    <meta property="og:image" content="og-image.svg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CodingGeh — Static Landing, One Prompt to Ship" />
+    <meta name="twitter:description" content="A fast, responsive static landing with zero dependencies. Open index.html and ship." />
+    <meta name="twitter:image" content="og-image.svg" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%23433cff'/><text x='50' y='58' font-size='42' text-anchor='middle' fill='%23fff' font-family='Arial'>C</text></svg>">
+    <link rel="stylesheet" href="styles.css" />
+    <!-- JSON-LD structured data (filled at runtime for correct domain) -->
+    <script type="application/ld+json" id="ld-json">{
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CodingGeh",
+      "url": "https://coding-geh.github.io/static-landing/",
+      "logo": "og-image.svg",
+      "sameAs": []
+    }</script>
+    <script type="application/ld+json" id="ld-website">{
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "CodingGeh",
+      "url": "https://coding-geh.github.io/static-landing/"
+    }</script>
+  </head>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="CodingGeh Landing">
+          <span class="logo" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+              <rect x="2" y="2" width="20" height="20" rx="6" class="logo-rect"/>
+              <path d="M7 14l3-4 3 4 4-6" class="logo-path"/>
+            </svg>
+          </span>
+          <span class="brand-text" data-i18n="brand">CodingGeh</span>
+        </a>
+        <div class="header-actions">
+          <nav class="nav">
+            <a href="#features" data-i18n="nav.features">Features</a>
+            <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+            <a href="#faq" data-i18n="nav.faq">FAQ</a>
+            <a href="#contact" class="btn btn-sm" data-i18n="nav.contact">Contact</a>
+          </nav>
+          <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">
+            <span class="icon-sun" aria-hidden="true"></span>
+            <span class="icon-moon" aria-hidden="true"></span>
+          </button>
+          <button id="langToggle" class="lang-btn" aria-label="Switch language" title="Switch language">EN</button>
+          <button id="menuToggle" class="menu-btn" aria-label="Open menu" aria-controls="navDrawer" aria-expanded="false">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div id="backdrop" class="backdrop" hidden></div>
+    <nav id="navDrawer" class="nav-drawer" aria-label="Mobile Navigation">
+      <button id="drawerClose" class="drawer-close" aria-label="Close menu" title="Close">×</button>
+      <a href="#features" data-i18n="nav.features">Features</a>
+      <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#contact" class="btn btn-primary" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container grid-2">
+          <div class="hero-copy reveal anim-up">
+            <h1 data-i18n="hero.title">Lightning-fast static website. Deploy in minutes.</h1>
+            <p class="lead" data-i18n-html="hero.lead_html">No build tools, no hassle. Just open <code>index.html</code> — responsive, fast, and production-ready.</p>
+            <div class="hero-cta">
+              <a href="#features" class="btn btn-primary" data-i18n="hero.cta.features">See Features</a>
+              <a href="#pricing" class="btn btn-ghost" data-i18n="hero.cta.pricing">View Pricing</a>
+            </div>
+            <ul class="trustlist">
+              <li class="reveal anim-fade"><span class="dot"></span> <span data-i18n="hero.trust.noFramework">No framework</span></li>
+              <li class="reveal anim-fade"><span class="dot"></span> <span data-i18n="hero.trust.fastAccess">Fast access</span></li>
+              <li class="reveal anim-fade"><span class="dot"></span> <span data-i18n="hero.trust.darkMode">Dark mode</span></li>
+            </ul>
+          </div>
+          <div class="hero-art reveal anim-up" aria-hidden="true">
+            <div class="glass-card floaty">
+              <div class="gc-line">
+                <span class="gc-dot"></span>
+                <span class="gc-bar" style="--w:76%"></span>
+              </div>
+              <div class="gc-line">
+                <span class="gc-dot"></span>
+                <span class="gc-bar" style="--w:54%"></span>
+              </div>
+              <div class="gc-line">
+                <span class="gc-dot"></span>
+                <span class="gc-bar" style="--w:92%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <h2 class="section-title underline" data-i18n="features.title">Everything you need</h2>
+          <div class="features-grid">
+            <article class="card reveal anim-up">
+              <div class="card-icon">⚡</div>
+              <h3 data-i18n="features.cards.noBuild.title">Zero Build</h3>
+              <p data-i18n="features.cards.noBuild.body">Run with pure HTML, CSS, and JS. Perfect for quick launches.</p>
+            </article>
+            <article class="card reveal anim-up">
+              <div class="card-icon">📱</div>
+              <h3 data-i18n="features.cards.responsive.title">Responsive</h3>
+              <p data-i18n="features.cards.responsive.body">Flexible grid for phone, tablet, and desktop.</p>
+            </article>
+            <article class="card reveal anim-up">
+              <div class="card-icon">🌙</div>
+              <h3 data-i18n="features.cards.darkMode.title">Dark Mode</h3>
+              <p data-i18n="features.cards.darkMode.body">One-click theme toggle with saved preference.</p>
+            </article>
+            <article class="card reveal anim-up">
+              <div class="card-icon">🧩</div>
+              <h3 data-i18n="features.cards.modular.title">Modular</h3>
+              <p data-i18n-html="features.cards.modular.body_html">Clear structure: <code>index.html</code>, <code>styles.css</code>, <code>script.js</code>.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt" id="pricing">
+        <div class="container">
+          <h2 class="section-title underline" data-i18n="pricing.title">Simple pricing</h2>
+          <div class="pricing-grid">
+            <article class="price-card reveal anim-up">
+              <h3 data-i18n="pricing.free.title">Free</h3>
+              <p class="subtitle" data-i18n="pricing.free.subtitle">Just clone & deploy</p>
+              <ul class="price-features">
+                <li data-i18n="pricing.free.features.1">Responsive landing</li>
+                <li data-i18n="pricing.free.features.2">Dark mode</li>
+                <li data-i18n="pricing.free.features.3">Zero dependencies</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary" data-i18n="pricing.free.cta">Get it now</a>
+            </article>
+            <article class="price-card highlight reveal anim-up">
+              <h3 data-i18n="pricing.pro.title">Pro</h3>
+              <p class="subtitle" data-i18n="pricing.pro.subtitle">Customization & support</p>
+              <ul class="price-features">
+                <li data-i18n="pricing.pro.features.1">Extra sections</li>
+                <li data-i18n="pricing.pro.features.2">Ready-to-use copy</li>
+                <li data-i18n="pricing.pro.features.3">Form integrations</li>
+              </ul>
+              <a href="#contact" class="btn btn-ghost" data-i18n="pricing.pro.cta">Contact</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="container">
+          <h2 class="section-title underline" data-i18n="faq.title">Frequently asked questions</h2>
+          <details class="faq reveal anim-fade">
+            <summary data-i18n="faq.q1.title">Do I need Node.js or build tools?</summary>
+            <p data-i18n-html="faq.q1.body">No. Just open <code>index.html</code> in your browser.</p>
+          </details>
+          <details class="faq reveal anim-fade">
+            <summary data-i18n="faq.q2.title">Can I deploy to static hosting?</summary>
+            <p data-i18n="faq.q2.body">Yes. Upload this folder to Netlify, Vercel Static, GitHub Pages, or Nginx.</p>
+          </details>
+          <details class="faq reveal anim-fade">
+            <summary data-i18n="faq.q3.title">How do I change colors/brand?</summary>
+            <p data-i18n-html="faq.q3.body_html">Edit CSS variables under <code>:root</code> in <code>styles.css</code>.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="container">
+          <h2 class="section-title" data-i18n="contact.title">Contact</h2>
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-grid">
+              <label class="field">
+                <span data-i18n="contact.name">Name</span>
+                <input type="text" name="name" placeholder="Your name" required />
+                <small class="error" data-i18n="contact.error.required">Required</small>
+              </label>
+              <label class="field">
+                <span data-i18n="contact.email">Email</span>
+                <input type="email" name="email" placeholder="email@example.com" required />
+                <small class="error" data-i18n="contact.error.email">Invalid email</small>
+              </label>
+            </div>
+            <label class="field">
+              <span data-i18n="contact.message">Message</span>
+              <textarea name="message" rows="4" placeholder="Tell us what you need" required></textarea>
+              <small class="error" data-i18n="contact.error.required">Required</small>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary" data-i18n="contact.submit">Send</button>
+              <p id="formStatus" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> <span data-i18n="brand">CodingGeh</span>. <span data-i18n="footer.rights">All rights reserved.</span></p>
+        <a href="#home" class="backtotop" aria-label="Back to top" data-i18n="footer.backtotop">↑ Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
